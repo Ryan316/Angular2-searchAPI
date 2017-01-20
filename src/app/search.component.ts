@@ -21,7 +21,7 @@ export class SearchComponent {
 		if(this.queryString === '' || this.queryString === undefined) {
 			return;
 		}
-		// added clear timeout to avoid api calls spamming 
+		// added clear timeout to avoid api calls from spamming 
 		clearTimeout(this.timeoutId);
 		this.timeoutId = setTimeout(() => { 
 			this.getSearch(this.queryString);
