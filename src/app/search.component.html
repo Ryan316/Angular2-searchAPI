@@ -1,0 +1,36 @@
+<div class="searchInputContainer">
+	<div class="container">
+		<div class="row">
+	        <div class="searchField col-sm-6 col-sm-offset-3">
+	            <div id="imaginary_container"> 
+	                <div class="input-group">
+	                    <input id="searchInput" type="text" class="form-control" [(ngModel)]="queryString" (keyup)="searchHandler($event)" placeholder="Find Movies"/>
+	                    <button id="searchBtn" type="button" class="btn btn-primary" (click)="searchHandler($event)">Search</button>
+	                </div>
+	            </div>
+	        </div>
+		</div>
+	</div>
+</div>
+<div class="searchContainer">
+	<div class="container">
+		<div class="row">
+			<div *ngFor="let movie of collection?.results" class="movie-card col-sm-2">
+				<div class="movie-card--image" show-hide>
+			        <img [src]="'http://image.tmdb.org/t/p/w154' + movie.poster_path" alt="">
+			        <div class="releaseDateCount">
+			       		<div class="releaseDate">Release Date: {{movie.release_date | date: 'MM/dd/yyyy'}}</div>
+			        	<div class="voteCount">Votes: {{movie.vote_average}}</div>
+			        </div>
+			    </div>
+			   	<div class="movie-card--info-section">
+			        <div class="info-section--title">
+			        	{{ movie.title }}
+			        </div>
+			    </div>
+			</div>
+		</div>
+	</div>
+</div>
+
+

@@ -1,0 +1,87 @@
+.searchContainer {
+    margin-top: 40px;
+}
+
+.movie-card {
+    display: inline-block;
+    background-color: #fff;
+    color: #666;
+    min-width: 150px;
+    padding-bottom: 20px;
+}
+
+.movie-card--image {
+    cursor: pointer;
+    text-align: center;
+    margin: 0 auto;
+    min-width: 150px;
+    white-space: nowrap;
+    img {
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        width: 150px;
+        height: 190px;
+    }
+}
+
+.movie-card--info-section {
+    display: flex;
+    align-items: center; 
+    font-size: 12px;
+    height: 50px;
+    width: 150px;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    .info-section--title {
+        margin: 0 auto;
+    }
+}
+
+#imaginary_container{
+    margin-top:25%; 
+}
+.stylish-input-group .input-group-addon{
+    background: white !important; 
+}
+.stylish-input-group .form-control{
+    border-right:0; 
+    box-shadow:0 0 0; 
+    border-color:#ccc;
+}
+.stylish-input-group button{
+    border:0;
+    background:transparent;
+}
+
+.searchField {
+    margin: 0 auto;
+    font-size: 14px;
+}
+
+.searchSubmit {
+    border: 1px solid black;
+}
+
+#searchBtn {
+    background-color: #1aa1e1;
+    border-color: #1aa1e1;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#searchInput {
+    font-size: 14px;
+}
+
+.releaseDateCount {
+    background-color: white;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 5px;
+    position: absolute;
+    bottom: 70px;
+    width: 155px;
+    opacity: .777;
+    display: none;
+}
+
