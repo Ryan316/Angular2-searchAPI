@@ -14,7 +14,8 @@
     cursor: pointer;
     text-align: center;
     margin: 0 auto;
-    min-width: 150px;
+    position: relative;
+    width: 150px;
     white-space: nowrap;
     img {
         box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -79,8 +80,8 @@
     font-weight: bold;
     padding: 5px;
     position: absolute;
-    bottom: 70px;
-    width: 155px;
+    bottom: -1px;
+    width: 150px;
     opacity: .777;
     display: none;
 }
