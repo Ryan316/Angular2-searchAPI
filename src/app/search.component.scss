@@ -65,9 +65,6 @@
 
 #searchBtn {
     background-color: #1aa1e1;
-    border-color: #1aa1e1;
-    font-size: 14px;
-    cursor: pointer;
 }
 
 #searchInput {
@@ -84,5 +81,9 @@
     width: 150px;
     opacity: .777;
     display: none;
+}
+
+.top-buffer {
+    margin-top: 150px;
 }
 

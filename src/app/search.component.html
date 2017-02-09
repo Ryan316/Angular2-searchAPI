@@ -1,21 +1,25 @@
 <div class="searchInputContainer">
 	<div class="container">
-		<div class="row">
-	        <div class="searchField col-sm-6 col-sm-offset-3">
-	            <div id="imaginary_container"> 
-	                <div class="input-group">
-	                    <input id="searchInput" type="text" class="form-control" [(ngModel)]="queryString" (keyup)="searchHandler($event)" placeholder="Find Movies"/>
-	                    <button id="searchBtn" type="button" class="btn btn-primary" (click)="searchHandler($event)">Search</button>
-	                </div>
-	            </div>
-	        </div>
-		</div>
+	<div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+            <div id="custom-search-input">
+                <div class="input-group top-buffer col-md-12">
+                    <input type="text" class="form-control input-lg" [(ngModel)]="queryString" (keyup)="searchHandler($event)" placeholder="Find Movies" />
+                    <span class="input-group-btn">
+                        <button id="searchBtn" class="btn btn-info btn-lg" type="button" (click)="searchHandler($event)">
+                            <i class="glyphicon glyphicon-search"></i>
+                        </button>
+                    </span>
+                </div>
+            </div>
+        </div>
 	</div>
+</div>
 </div>
 <div class="searchContainer">
 	<div class="container">
 		<div class="row">
-			<div *ngFor="let movie of collection?.results" class="movie-card col-sm-2">
+			<div *ngFor="let movie of collection?.results" class="movie-card col-md-2">
 				<div class="movie-card--image" show-hide>
 			        <img [src]="'http://image.tmdb.org/t/p/w154' + movie.poster_path" alt="">
 			        <div class="releaseDateCount">
